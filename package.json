@@ -1,0 +1,24 @@
+{
+  "name": "node-styl",
+  "version": "0.0.1",
+  "description": "simple bash console syling",
+  "main": "styl.js",
+  "scripts": {
+    "test": "styl-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yorgsite/node-styl.git"
+  },
+  "keywords": [
+    "console",
+    "bash",
+    "javascript"
+  ],
+  "author": "yorg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yorgsite/node-styl/issues"
+  },
+  "homepage": "https://github.com/yorgsite/node-styl#readme"
+}
