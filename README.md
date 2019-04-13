@@ -10,14 +10,23 @@ console.log("i can be "+styl("red").red.bold);
 console.log("or "+styl(" black ").black.whiteBG);
  ```
 
-Use preformated style :
-```javascript
-...
-var title = styl().green.bold.blueBG.text;
-console.log("this is "+title(" A TITLE "));
-console.log("this is "+title(" AN OTHER TITLE "));
-```
-NB: Remember styl is an object, it must be at least merged with an empty string.
+ Use preformated style :
+ ```javascript
+ ...
+ var title = styl().green.bold.blueBG.text;
+ console.log("this is "+title(" A TITLE "));
+ console.log("this is "+title(" AN OTHER TITLE "));
+ ```
+
+ Clean readered styles to handle text length :
+ ```javascript
+ ...
+ var styled = styl("this is ").green.bold+""+title(" A TITLE ");
+ var text = styl.none(styled);
+ console.log("styled=","'"+styled+"'",' length=',text.length);
+ ```
+
+NB: styled text should be at least merged with an empty string to render.
 
 available style properties are :
 * **styles :**

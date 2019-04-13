@@ -62,5 +62,9 @@ var styl=function(text){
 	}
 	return _interface;
 };
+styl.none		= function(txt){
+	return txt.split(/\x1B\[[0-9;]*m/).join('');
+};
+
 
 module.exports = styl;
