@@ -1,6 +1,12 @@
 # node-styl
 simple bash console syling
 
+Install :
+
+```
+npm install node-styl
+```
+
 Add colors and styles to your logs :
 ```javascript
 
