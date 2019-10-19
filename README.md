@@ -10,7 +10,7 @@ npm install node-styl
 Add colors and styles to your logs :
 ```javascript
 
-var styl = require('node-styl');
+const styl = require('node-styl');
 ...
 console.log("i can be "+styl("red").red.bold);
 console.log("or "+styl(" black ").black.whiteBG);
@@ -24,7 +24,7 @@ console.log("or "+styl(" black ").black.whiteBG);
  console.log("this is "+title(" AN OTHER TITLE "));
  ```
 
- Clean readered styles to handle text length :
+ Clean rendered styles to handle text length :
  ```javascript
  ...
  var styled = styl("this is ").green.bold+""+title(" A TITLE ");
